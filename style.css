@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p{
+
+	font-size: 16px;
+}
+
+
+body{
+
+	font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+
+.app{
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem 1rem
+}
+.header-app{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.notify{
+	display: flex;
+	align-items: center;
+	column-gap: 0.6rem
+}
+.info-notify{
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.desc-notify{
+	background-color: hsl(219, 85%, 26%);
+	width: 32px;
+	height: 25px;
+	border-radius: 0.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: hsl(0, 0%, 100%);
+	font-weight: 800;
+}
+#btn-notify{
+	background-color: transparent;
+	border: none;
+	font-size: 13.5px;
+	cursor: pointer;
+	color: hsl(219, 12%, 42%);
+}
+#btn-notify:hover{
+	color: hsl(219, 85%, 26%);
+}
+
+/*////////////// area notify /////////////*/
+
+.area-notify{
+	margin-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.6rem;
+}
+.item-notify{
+	display: flex;
+	background-color: hsl(210, 60%, 98%);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	column-gap: 0.8rem;
+}
+.img-avatar-user{
+	width: 38.5px;
+	height: 38.5px;
+}
+
+.info-user-notify{
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.2rem;
+}
+.unread-notify p:first-of-type::after{
+	content: " ";
+	width: 8px;
+	height: 8px;
+	background-color: hsl(1, 90%, 64%);
+	display: inline-block;
+	border-radius: 5rem;
+	margin-left: 0.3rem;
+
+}
+
+
+.desc-user-notify{
+	font-size: 14px;
+	color: hsl(219, 12%, 42%);
+}
+
+.desc-user-notify b:first-child{
+	color: hsl(224, 21%, 14%);
+	padding-right: 0.3rem;
+}
+.desc-user-notify b:hover{
+	color: hsl(219, 85%, 26%);
+	cursor: pointer;
+}
+
+
+
+.time-notify{
+	font-size: 14px;
+	color: hsl(219, 14%, 63%);
+
+}
+
+.desc-user-group-notify b{
+	color: hsl(224, 21%, 14%);
+
+}
+.desc-user-group-notify b:last-child{
+	color: hsl(219, 85%, 26%);
+}
+
+.comment-user-notify{
+	border: 1px solid hsl(205, 33%, 90%);
+	padding: 1rem;
+	margin-top: 0.55rem;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+.comment-user-notify:hover{
+	background-color: hsl(205, 33%, 90%);
+}
+.desc-comment-user-notify{
+	font-size: 14px;
+	color: hsl(219, 12%, 42%);
+
+}
+.image-chess{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 1440px){
+	.main{
+		display: inline-block;
+		background-color: hsl(210, 60%, 98%);
+		width: 100vw;
+	}
+	.app{
+		padding: 2rem 2rem;
+		margin: 5% 24.5%;
+		background-color: hsl(0, 0%, 100%);
+		border-radius: 1rem;
+		box-shadow: 0rem 1rem 1rem hsl(205, 33%, 90%);
+	}
+	.info-notify{
+		font-size: 24px;
+		ont-weight: 800;
+	}
+	#btn-notify{
+		
+		font-size: 16px;
+
+	}
+
+	/*////////////// area notify /////////////*/
+	.area-notify{
+		margin-top: 2rem;
+		display: flex;
+		flex-direction: column;
+		row-gap: 0.6rem;
+	}
+	.item-notify{
+		display: flex;
+		background-color: hsl(210, 60%, 98%);
+		border-radius: 0.5rem;
+		padding: 1rem 1.3rem;
+		column-gap: 1.2rem;
+	}
+	.img-avatar-user{
+		width: 45px;
+		height: 45px;
+	}
+
+	.desc-user-notify{
+		font-size: 16px;
+		color: hsl(219, 12%, 42%);
+	}
+	.comment-user-notify{
+		border: 1px solid hsl(205, 33%, 90%);
+		padding: 1.2rem;
+		margin-top: 0.55rem;
+		border-radius: 0.3rem;
+		cursor: pointer;
+	}
+
+	.desc-comment-user-notify{
+		font-size: 16px;
+		color: hsl(219, 12%, 42%);
+
+	}
+	.image-chess{
+		margin-left: 10.2rem;
+	}
+
+	.time-notify{
+		font-size: 16px;
+		
+
+	}
+
+}

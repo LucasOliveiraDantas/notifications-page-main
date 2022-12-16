@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="app">
+    <!--header notify -->
+    <div class="header-app">
+      <div class="notify">
+        <p class="info-notify">Notifications</p>
+        <span class="desc-notify">3</span>
+      </div>
+      <div class="opt-notify">
+        <button id="btn-notify">Mark all as read</button>
+      </div>
+    </div>
+    <!-- area notify -->
+    <div class="area-notify">
+      <!-- item notify 1 -->
+      <div class="item-notify">
+        <img class="img-avatar-user" src="assets/images/avatar-mark-webber.webp" alt="image avatar user">
+
+        <div class="info-user-notify unread-notify">
+          <p class="desc-user-notify">
+            <b>Mark Webber</b>
+            reacted to your recent post
+            <b>My first tournament today!</b>
+
+          </p>
+
+          <p class="time-notify">
+            1m ago
+          </p>
+        </div>
+      </div>
+      <!-- item notify 2 -->
+      <div class="item-notify">
+        <img class="img-avatar-user" src="assets/images/avatar-angela-gray.webp" alt="image avatar user">
+
+        <div class="info-user-notify unread-notify">
+          <p class="desc-user-notify">
+            <b>Angela Gray</b>
+            followed you
+          </p>
+
+          <p class="time-notify">
+            5m ago
+          </p>
+        </div>
+      </div>
+      <!-- item notify 3 -->
+      <div class="item-notify">
+        <img class="img-avatar-user" src="assets/images/avatar-jacob-thompson.webp" alt="image avatar user">
+
+        <div class="info-user-notify unread-notify">
+          <p class="desc-user-notify desc-user-group-notify">
+            <b>Jacob Thompson</b>
+            has joined your group
+            <b>Chess Club</b>
+          </p>
+
+          <p class="time-notify">
+            1 day ago
+          </p>
+        </div>
+      </div>
+      <!-- item notify 4 -->
+      <div class="item-notify">
+        <img class="img-avatar-user" src="assets/images/avatar-rizky-hasanuddin.webp" alt="image avatar user">
+
+        <div class="info-user-notify ">
+          <p class="desc-user-notify ">
+            <b>Rizky Hasanuddin</b>
+            sent you a private message
+  
+          </p>
+
+          <p class="time-notify">
+            5 days ago
+          </p>
+          <div class="comment-user-notify">
+            <p class="desc-comment-user-notify">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+              I'm already having lots of fun and improving my game.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- item notify 5 -->
+      <div class="item-notify">
+        <img class="img-avatar-user" src="assets/images/avatar-kimberly-smith.webp" alt="image avatar user">
+
+        <div class="info-user-notify ">
+          <p class="desc-user-notify ">
+            <b>Kimberly Smith</b>
+            commented on your picture
+          </p>
+
+          <p class="time-notify">
+            1 week ago
+          </p>
+        </div>
+        <img class="image-chess" src="assets/images/image-chess.webp" alt="image chess game">
+      </div>
+      <!-- item notify 6 -->
+      <div class="item-notify">
+        <img class="img-avatar-user" src="assets/images/avatar-nathan-peterson.webp" alt="image avatar user">
+
+        <div class="info-user-notify">
+          <p class="desc-user-notify">
+            <b>Nathan Peterson</b>
+            reacted to your recent post
+            <b>5 end-game strategies to increase your win rate</b>
+          </p>
+
+          <p class="time-notify">
+            2 weeks ago
+          </p>
+        </div>
+      </div>
+      <!-- item notify 7 -->
+      <div class="item-notify">
+        <img class="img-avatar-user" src="assets/images/avatar-anna-kim.webp" alt="image avatar user">
+
+        <div class="info-user-notify ">
+          <p class="desc-user-notify desc-user-group-notify">
+            <b>Anna Kim</b>
+            left the group
+            <b>Chess Club</b>
+          </p>
+
+          <p class="time-notify">
+            2 weeks ago
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+  Notifications 3
+
+  Mark all as read
+
+  Mark Webber reacted to your recent post My first tournament today!
+  1m ago
+
+  Angela Gray followed you
+  5m ago
+
+  Jacob Thompson has joined your group Chess Club
+  1 day ago
+
+  Rizky Hasanuddin sent you a private message
+  5 days ago
+  Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+  I'm already having lots of fun and improving my game.
+
+  Kimberly Smith commented on your picture
+  1 week ago
+
+  Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
+  2 weeks ago
+
+  Anna Kim left the group Chess Club
+  2 weeks ago
+  -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
